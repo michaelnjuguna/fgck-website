@@ -1,9 +1,15 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
+ * 
  */
+
 module.exports = {
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `FGCK Machakos Branch`,
+    // TODO: Update this to your site's URL
+    siteUrl: `http://localhost:8000/`,
+    description: `Full gospel churches of Kenya, Machakos branch`,
+    keywords: `Full gospel churches of Kenya, Machakos branch`,
   },
   plugins: [],
-}
+};
