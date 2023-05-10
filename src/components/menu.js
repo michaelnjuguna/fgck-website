@@ -1,35 +1,42 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Container,Nav } from "react-bootstrap";
+import Logo from "../images/icon.jpg";
+import "./styles/menu.scss";
+// import { Navbar, Container,Nav } from "react-bootstrap";
 
+// TODO Navbar component
+// TODO Header component
+// TODO Footer component
+// TODO home page
 
+let navlinks = [
+  { name: "Home", link: "/" },
+  { name: "About", link: "/about" },
+  { name: "Services", link: "/services" },
+  { name: "Give", link: "/give" },
+  { name: "Contact", link: "/contact" },
+];
 
 export default function Menu() {
   return (
     <>
-      <Navbar bg="primary" variant="dark">
-        <Container>
-          <Navbar.Brand href="#home">Navbar</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link>
-              <Link to="/" className="text-light">Home</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/about">About</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/services">Services</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/give">Give</Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/contact">Contact</Link>
-            </Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
+      <navbar className="nav-container bg-light">
+        <div className="logo">
+          <Link to="/">
+            <img src={Logo} alt="Full gospel churches of kenya machakos branch"/>
+          </Link>
+        </div>
+        <div className="nav-links">
+          <ul>
+            {navlinks.map((link,index)=>{
+              return <li key={index} className="nav-link">
+                <Link to={link.link}>{link.name}</Link>
+              </li>
+            })}
+          </ul>
+        </div>
+      </navbar>
     </>
   );
 }

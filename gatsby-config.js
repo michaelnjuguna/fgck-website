@@ -18,5 +18,6 @@ module.exports = {
         icon: "src/images/icon.jpg",
       },
     },
+    `gatsby-plugin-sass`,
   ],
 };
