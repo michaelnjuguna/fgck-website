@@ -11,5 +11,12 @@ module.exports = {
     description: `Full gospel churches of Kenya, Machakos branch`,
     keywords: `Full gospel churches of Kenya, Machakos branch`,
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.jpg",
+      },
+    },
+  ],
 };
