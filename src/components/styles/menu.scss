@@ -1,14 +1,16 @@
 @import "../../styles/abstracts/variables";
+@import "../../styles/base/base";
 @import "../../styles/base/reset";
 .nav-container {
-  position: fixed;
+  position:sticky;
   width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-inline: $horizontalPadding;
   padding-block: 5px;
+ z-index: 10;
+
 
   .logo {
     img {
@@ -74,8 +76,12 @@
     flex-direction: column !important;
     padding-left: 5vw;
     li {
-      margin: 10px 0px !important;
+      margin: 1vh 0px !important;
+      a{
+        font-size: 120% !important;
+      }
     }
+    
   }
 }
 @media (min-width: 768px) {
@@ -85,6 +91,7 @@
 }
 
 .toggler{
+
     &:hover{
         background-color: $dark;
         color: $light;

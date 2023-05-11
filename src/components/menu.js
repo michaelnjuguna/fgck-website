@@ -20,23 +20,26 @@ let navlinks = [
 
 function showMenu() {
   let nav = document.querySelector(".nav-links");
+  // let navlink = document.querySelectorAll(".link")
+  // navlink.classList.toggle("h3")
+  // navlink.classList.toggle("h4")
   nav.classList.toggle("show");
 }
 
 export default function Menu() {
   return (
     <>
-      <navbar className="nav-container bg-light">
+      <navbar className="nav-container px-5 bg-light">
         <div className="logo">
           <Link to="/">
-            <img onClick={showMenu} src={Logo} alt="Full gospel churches of kenya machakos branch"/>
+            <img  src={Logo} alt="Full gospel churches of kenya machakos branch"/>
           </Link>
         </div>
         <div className="nav-links">
           <ul>
             {navlinks.map((link,index)=>{
-              return <li onClick={showMenu} key={index} className="nav-link nav-item text-dark">
-                <Link to={link.link} className="h3">{link.name}</Link>
+              return <li  key={index} className="nav-link nav-item text-dark">
+                <Link to={link.link} className="h4 link">{link.name}</Link>
               </li>
             })}
           </ul>
