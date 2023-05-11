@@ -6,7 +6,7 @@ import { BsFillTelephonePlusFill } from "react-icons/bs";
 
 export default function Footer(){
     return (
-      <section className="bg-dark text-light footer">
+      <section className="bg-dark text-light footer mt-5">
         <div className="container">
           <div className="row pt-5 text-center">
             <div className="col-md mt-2 logo  text-start footer-info">

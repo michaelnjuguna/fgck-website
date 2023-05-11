@@ -18,8 +18,14 @@
 
             text-align: center !important;
         }
+        .logo{
+            img{
+                height: 7rem;
+                padding-bottom: 1rem;
+            }
+        }
         .footer-comment{
-            padding-block: 2%;
+            padding-bottom: 2%;
         }
     }
 }

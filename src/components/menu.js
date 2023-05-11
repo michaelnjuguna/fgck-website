@@ -43,7 +43,7 @@ export default function Menu() {
           </ul>
         </div>
           <div className="toggler" onClick={showMenu}>
-            <button className="h2 bg-light text-dark border border-3 p-2 border-dark">MENU</button>
+            <button className=" bg-light text-dark border border-3 p-2 border-dark">MENU</button>
           </div>
       </navbar>
     </>
