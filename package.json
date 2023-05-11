@@ -12,7 +12,9 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run serve"
   },
   "dependencies": {
     "@popperjs/core": "^2.6.0",

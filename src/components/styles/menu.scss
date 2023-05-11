@@ -2,7 +2,7 @@
 @import "../../styles/base/base";
 @import "../../styles/base/reset";
 .nav-container {
-  position:sticky;
+  position:fixed;
   width: 100vw;
   display: flex;
   flex-direction: row;
@@ -11,6 +11,8 @@
   padding-block: 5px;
  z-index: 10;
  box-shadow: 0px 9px 15px 5px #2125291b;
+ opacity: .9;
+ 
 
 
   .logo {
@@ -29,10 +31,12 @@
         a {
           text-decoration: none;
           border: solid $dark 3px;
-          padding: 3px;
+          padding:3px 5px;
+          background-color: $dark;
+          color:  $light;
           &:hover{
-            color:  $light;
-            background-color: $dark;
+          background-color: $light;
+          color:$dark;
             text-decoration: none;
           }
         }
@@ -77,7 +81,7 @@
     flex-direction: column !important;
     padding-left: 5vw;
     li {
-      margin: 1vh 0px !important;
+      margin: 2vh 0px !important;
       a{
         font-size: 120% !important;
       }

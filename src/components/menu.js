@@ -12,10 +12,8 @@ import Logo from "../images/logo.png";
 
 let navlinks = [
   { name: "Home", link: "/" },
-  { name: "About", link: "/about" },
   { name: "Services", link: "/services" },
   { name: "Give", link: "/give" },
-  { name: "Contact", link: "/contact" },
 ];
 
 function showMenu() {
@@ -29,7 +27,7 @@ function showMenu() {
 export default function Menu() {
   return (
     <>
-      <navbar className="nav-container px-5 bg-light">
+      <navbar className="nav-container px-5 bg-light ">
         <div className="logo">
           <Link to="/">
             <img  src={Logo} alt="Full gospel churches of kenya machakos branch"/>

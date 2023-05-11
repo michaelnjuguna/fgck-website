@@ -1,0 +1,7 @@
+{
+  "name": "fgck",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "custom"
+}

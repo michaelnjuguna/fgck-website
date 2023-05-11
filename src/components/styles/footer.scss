@@ -1,0 +1,25 @@
+.footer{
+    min-height: 50vh;
+    
+
+    .logo{
+        img{
+            height: 15rem;
+        }
+    }
+    .footer-comment{
+        padding-block: 2px;
+    }
+}
+
+@media (max-width:768px) {
+    .footer{
+        .footer-info{
+
+            text-align: center !important;
+        }
+        .footer-comment{
+            padding-block: 2%;
+        }
+    }
+}
